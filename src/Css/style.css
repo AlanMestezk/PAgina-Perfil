@@ -1,0 +1,124 @@
+
+@import url(./colors.css);
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--cor-primaria);
+}
+
+.card
+{
+    position: relative;
+    width: 350px;
+    height: 190px;
+    background-color: var(--cor-auxiliar);
+    transition: 0.5s;
+}
+
+.card .content
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.card .content .details
+{
+    padding: 57px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(145px);
+}
+
+.card:hover .content .details
+{
+  transform: translate(0px);
+}
+
+.card .content .details h2
+{
+  font-size: 1.25em;
+  font-weight: 60;
+  color: var(--cor-secundaria);
+  line-height: 1.2em;
+}
+
+.card .content .details h2 span
+{
+  font-size: 17px;
+  color: var(--cor3-auxiliar);
+}
+
+.card .content .details .data
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.card .content .details .data h3
+{
+    font-size: 1em;
+    font-weight: 300;
+    color: var(--cor-secundaria);
+}
+
+.card .content .details .actionBtn
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card .content .details h3 span
+{
+    font-size: 0.75em;
+    font-weight: 600;
+    color: var(--cor3-auxiliar);
+}
+
+.card .content .details .actionBtn button
+{
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: var(--cor-secundaria);
+    cursor: pointer;
+    color: var(--cor-auxiliar);
+}
+
+.card .content .details .actionBtn button:nth-child(2)
+{
+    background-color: var(--cor3-auxiliar);
+}
+
+.card .content .details .actionBtn button:hover
+{
+    background-color: var(--cor-terciaria);
+    color: var(--cor3-auxiliar);
+}
+
+
+
+
